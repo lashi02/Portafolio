@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio | Ingeniero en Automática & Developer</title>
+    <link rel="stylesheet" href="output.css">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="antialiased">
+
+    <!-- Navegación -->
+    <nav class="fixed top-0 w-full z-50 bg-[#1f2937]/80 backdrop-blur-md border-b border-white/10">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+            <span class="text-xl font-bold tracking-tighter text-accent uppercase">Dev.Auto</span>
+            <div class="hidden md:flex space-x-8 text-sm font-medium text-gray-300">
+                <a href="#inicio" class="hover:text-accent transition-colors">Inicio</a>
+                <a href="#stack" class="hover:text-accent transition-colors">Stack</a>
+                <a href="#proyectos" class="hover:text-accent transition-colors">Proyectos</a>
+                <a href="#sobre-mi" class="hover:text-accent transition-colors">Sobre mí</a>
+                <a href="#contacto" class="hover:text-accent transition-colors">Contacto</a>
+            </div>
+            <!-- Mobile Menu Toggle -->
+            <button class="md:hidden text-gray-400">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="inicio" class="relative min-h-screen flex items-center justify-center pt-16 pb-16 overflow-hidden"
+        style="background-image: radial-gradient(circle at 2px 2px, rgba(74, 222, 128, 0.07) 1px, transparent 0); background-size: 40px 40px; background-color: #1f2937;">
+        <div class="max-w-5xl mx-auto px-6 relative z-10">
+            <div class="flex flex-col md:flex-row items-center justify-center gap-12">
+                <!-- Foto de perfil -->
+                <div class="flex-shrink-0">
+                    <div class="w-64 h-64 rounded-full border-4 border-accent overflow-hidden shadow-2xl">
+                        <img src="media/perfil.webp" alt="Foto de perfil" class="w-full h-full object-cover">
+                    </div>
+                </div>
+
+                <!-- Contenido de texto -->
+                <div class="text-center md:text-left flex-1 max-w-md">
+                    <div
+                        class="inline-block px-3 py-1 mb-6 text-xs font-semibold tracking-widest text-accent uppercase bg-accent/10 border border-accent/20 rounded-full">
+                        Disponible para nuevos desafíos
+                    </div>
+                    <h1 class="text-5xl md:text-5xl font-bold leading-tight mb-6">
+                        ¡Hola! Soy Lázaro Javier 👋 <br>
+                        <span class="text-accent">Programador Web & Estudiante de Ingeniería</span>
+                    </h1>
+                    <p class="text-lg text-gray-300 mb-8 leading-relaxed">
+                        Me apasiona el mundo de la programación porque me permite transformar una idea lógica en una
+                        solución real que cualquiera puede usar. Mi formación en Ingeniería en Automática me dio la
+                        disciplina y la lógica, pero mi curiosidad me llevó a dominar Python y el desarrollo web.
+                        Disfruto creando
+                        interfaces limpias y sistemas funcionales.
+                    </p>
+                    <div class="flex flex-wrap gap-4 justify-center md:justify-start">
+                        <a href="#proyectos"
+                            class="px-8 py-4 bg-accent text-black font-bold rounded-lg hover:shadow-[0_0_20px_rgba(74,222,128,0.4)] transition-all">
+                            Ver Proyectos
+                        </a>
+                        <a href="#contacto"
+                            class="px-8 py-4 border border-white/20 hover:border-accent/50 rounded-lg transition-all flex items-center gap-2 bg-white/5">
+                            Contactar <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Elemento decorativo -->
+        <div class="absolute -right-20 top-1/4 w-96 h-96 bg-accent/10 blur-[120px] rounded-full"></div>
+    </header>
+
+    <!-- Stack Section -->
+    <section id="stack" class="py-24 bg-darker">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="mb-16 text-center">
+                <h2 class="text-3xl font-bold mb-4">Stack Tecnológico</h2>
+                <div class="w-20 h-1 bg-accent mx-auto rounded-full"></div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Backend & Lógica -->
+                <article
+                    class="p-8 rounded-2xl border border-white/10 card-gradient hover:border-accent/30 transition-all group">
+                    <div class="w-20 h-20 mb-6 group-hover:scale-110 transition-transform">
+                        <img src="media/bakend.png" alt="Backend" class="w-full h-full object-contain">
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Backend & Lógica</h3>
+                    <ul class="space-y-3 text-gray-400">
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle-2"
+                                class="w-4 h-4 text-accent"></i> Python (Django / Flask)</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle-2"
+                                class="w-4 h-4 text-accent"></i> C++ (Estructuras de datos)</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle-2"
+                                class="w-4 h-4 text-accent"></i> SQL Databases</li>
+                    </ul>
+                </article>
+
+                <!-- Frontend -->
+                <article
+                    class="p-8 rounded-2xl border border-white/10 card-gradient hover:border-accent/30 transition-all group">
+                    <div class="w-20 h-20 mb-6 group-hover:scale-110 transition-transform">
+                        <img src="media/fronted.png" alt="Frontend" class="w-full h-full object-contain">
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Frontend</h3>
+                    <ul class="space-y-3 text-gray-400">
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle-2"
+                                class="w-4 h-4 text-accent"></i> HTML5 / Modern CSS</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle-2"
+                                class="w-4 h-4 text-accent"></i> JavaScript (ES6+)</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle-2"
+                                class="w-4 h-4 text-accent"></i> Tailwind CSS</li>
+                    </ul>
+                </article>
+
+                                <!-- Data & Automation -->
+                <article
+                    class="p-8 rounded-2xl border border-white/10 card-gradient hover:border-accent/30 transition-all group">
+                    <div class="w-20 h-20 mb-6 group-hover:scale-110 transition-transform">
+                        <img src="media/demas.png" alt="Ademas" class="w-full h-full object-contain">
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Ademas..</h3>
+                    <ul class="space-y-3 text-gray-400">
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle-2"
+                                class="w-4 h-4 text-accent"></i> Pandas</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle-2"
+                                class="w-4 h-4 text-accent"></i> Tkinter Desktop Apps</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle-2"
+                                class="w-4 h-4 text-accent"></i> Git y Github</li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proyectos Section -->
+    <section id="proyectos" class="py-24">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+                <div>
+                    <h2 class="text-3xl font-bold mb-2">Proyectos Destacados</h2>
+                    <p class="text-gray-300">Una muestra de mis capacidades técnicas.</p>
+                </div>
+                <div class="h-[2px] flex-grow mx-8 bg-white/10 hidden md:block"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Proyecto 1 -->
+                <article
+                    class="group relative bg-[#374151] border border-white/10 rounded-2xl overflow-hidden hover:translate-y-[-4px] transition-all duration-300 shadow-xl">
+                    <div
+                        class="aspect-video bg-gradient-to-br from-accent/20 to-gray-900 flex items-center justify-center">
+                        <i data-lucide="bar-chart-3" class="w-12 h-12 text-accent/40"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Web para un restaurante</h3>
+                        <p class="text-sm text-gray-300 mb-4">
+                            Una web para un restautante que permite gestionarse desde el panel de administracion
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="text-[10px] font-bold px-2 py-1 bg-black/20 rounded text-accent">Python</span>
+                            <span class="text-[10px] font-bold px-2 py-1 bg-black/20 rounded text-accent">Django</span>
+                        </div>
+                        <a href="https://github.com/lashi02/django-practica"
+                            class="inline-flex items-center gap-2 text-sm font-semibold hover:text-accent transition-colors">
+                            <i data-lucide="github" class="w-4 h-4"></i> Código Fuente
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Proyecto 2 -->
+                <article
+                    class="group relative bg-[#374151] border border-white/10 rounded-2xl overflow-hidden hover:translate-y-[-4px] transition-all duration-300 shadow-xl">
+                    <div
+                        class="aspect-video bg-gradient-to-br from-blue-500/10 to-gray-900 flex items-center justify-center">
+                        <i data-lucide="globe" class="w-12 h-12 text-blue-500/40"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Todo-List</h3>
+                        <p class="text-sm text-gray-300 mb-4">
+                            Una lista de tareas que permite agregar, editar y eliminar tareas con una interfaz de usuario amigable.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="text-[10px] font-bold px-2 py-1 bg-black/20 rounded text-accent">HTML</span>
+                            <span
+                                class="text-[10px] font-bold px-2 py-1 bg-black/20 rounded text-accent">CSS</span>
+                            <span
+                                class="text-[10px] font-bold px-2 py-1 bg-black/20 rounded text-accent">JavaScript</span>
+                        </div>
+                        <a href="https://github.com/lashi02/Todo-list"
+                            class="inline-flex items-center gap-2 text-sm font-semibold hover:text-accent transition-colors">
+                            <i data-lucide="github" class="w-4 h-4"></i> Código Fuente
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Proyecto 3 -->
+                <article
+                    class="group relative bg-[#374151] border border-white/10 rounded-2xl overflow-hidden hover:translate-y-[-4px] transition-all duration-300 shadow-xl">
+                    <div
+                        class="aspect-video bg-gradient-to-br from-purple-500/10 to-gray-900 flex items-center justify-center">
+                        <i data-lucide="layout" class="w-12 h-12 text-purple-500/40"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Blog de Noticias</h3>
+                        <p class="text-sm text-gray-300 mb-4">
+                            Sitio web estático desarrollado con HTML y CSS, con diseño moderno y que permite ver las noticias.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="text-[10px] font-bold px-2 py-1 bg-black/20 rounded text-accent">HTML</span>
+                            <span
+                                class="text-[10px] font-bold px-2 py-1 bg-black/20 rounded text-accent">CSS</span>
+                        </div>
+                        <a href="https://github.com/lashi02/static-page-2"
+                            class="inline-flex items-center gap-2 text-sm font-semibold hover:text-accent transition-colors">
+                            <i data-lucide="github" class="w-4 h-4"></i> Código Fuente
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Proyecto 4 -->
+                <article
+                    class="group relative bg-[#374151] border border-white/10 rounded-2xl overflow-hidden hover:translate-y-[-4px] transition-all duration-300 shadow-xl">
+                    <div
+                        class="aspect-video bg-gradient-to-br from-orange-500/10 to-gray-900 flex items-center justify-center">
+                        <i data-lucide="file-code" class="w-12 h-12 text-orange-500/40"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Landing Page Estática</h3>
+                        <p class="text-sm text-gray-300 mb-4">
+                            Página estática creada con HTML y CSS puro.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="text-[10px] font-bold px-2 py-1 bg-black/20 rounded text-accent">HTML</span>
+                            <span
+                                class="text-[10px] font-bold px-2 py-1 bg-black/20 rounded text-accent">CSS</span>
+                            <span class="text-[10px] font-bold px-2 py-1 bg-black/20 rounded text-accent">Landing Page</span>
+                        </div>
+                        <a href="https://github.com/lashi02/estatic-page"
+                            class="inline-flex items-center gap-2 text-sm font-semibold hover:text-accent transition-colors">
+                            <i data-lucide="github" class="w-4 h-4"></i> Código Fuente
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Proyecto 5 -->
+                <article
+                    class="group relative bg-[#374151] border border-white/10 rounded-2xl overflow-hidden hover:translate-y-[-4px] transition-all duration-300 shadow-xl">
+                    <div
+                        class="aspect-video bg-gradient-to-br from-red-500/10 to-gray-900 flex items-center justify-center">
+                        <i data-lucide="calculator" class="w-12 h-12 text-red-500/40"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Calculadora con Tkinter</h3>
+                        <p class="text-sm text-gray-300 mb-4">
+                            Calculadora de escritorio desarrollada con Tkinter. Proyecto en desarrollo con algunos fallos pendientes de corrección.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="text-[10px] font-bold px-2 py-1 bg-black/20 rounded text-accent">Python</span>
+                            <span
+                                class="text-[10px] font-bold px-2 py-1 bg-black/20 rounded text-accent">Tkinter</span>
+                            <span class="text-[10px] font-bold px-2 py-1 bg-black/20 rounded text-accent">Desktop App</span>
+                        </div>
+                        <a href="https://github.com/lashi02/Calculadora-Tkinter"
+                            class="inline-flex items-center gap-2 text-sm font-semibold hover:text-accent transition-colors">
+                            <i data-lucide="github" class="w-4 h-4"></i> Código Fuente
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Mí Section -->
+    <section id="sobre-mi" class="py-24 bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="relative">
+                    <div class="aspect-square rounded-2xl border-2 border-accent/20 p-4">
+                        <img src="media/perfil.webp" alt="Foto de perfil"
+                            class="w-full h-full bg-[#374151] rounded-xl object-cover overflow-hidden">
+                    </div>
+                    <!-- Stats flotantes -->
+                    <div class="absolute -bottom-6 -right-6 bg-accent p-6 rounded-2xl text-black shadow-lg">
+                        <span class="block text-3xl font-bold">100%</span>
+                        <span class="text-xs font-bold uppercase tracking-wider">Autodidacta en Web</span>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="text-3xl font-bold mb-6 text-gray-900">Uniendo Dos Mundos</h2>
+                    <p class="text-gray-700 mb-6 leading-relaxed">
+                        Como estudiante de Ingeniería en Automática, mi
+                        cerebro está entrenado para entender sistemas complejos, bucles de retroalimentación y
+                        eficiencia de hardware. Esa base en <span class="text-white font-semibold">C++</span> me dio la
+                        disciplina necesaria para dominar la programación a bajo nivel.
+                    </p>
+                    <p class="text-gray-700 mb-8 leading-relaxed">
+                        Mi curiosidad me llevó al desarrollo de software, donde descubrí mi pasión por crear
+                        herramientas digitales. De forma autodidacta, he aprendido el ecosistema de
+                            Python y el diseño
+                            Frontend, permitiéndome construir soluciones que no
+                        solo funcionan con precisión matemática, sino que también son elegantes y fáciles de usar.
+                    </p>
+                    <div class="flex gap-4">
+                        <div class="text-center">
+                            <div class="text-accent font-bold text-xl">Ingeniería</div>
+                            <div class="text-[10px] uppercase text-gray-400">Formación</div>
+                        </div>
+                        <div class="w-[1px] h-10 bg-white/20"></div>
+                        <div class="text-center">
+                            <div class="text-accent font-bold text-xl">Desarrollo</div>
+                            <div class="text-[10px] uppercase text-gray-400">Pasión</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto / Footer -->
+    <footer id="contacto" class="py-16 border-t border-white/10 bg-darker">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-12">
+                <div>
+                    <h2 class="text-2xl font-bold text-white mb-4">¿Hablamos de software?</h2>
+                    <p class="text-gray-400">Estoy buscando mi primera oportunidad profesional.</p>
+                </div>
+
+                <div class="flex gap-6">
+                    <a href="https://wa.me/55883672"
+                        class="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center hover:bg-accent hover:text-black hover:border-accent transition-all">
+                        <i data-lucide="message-circle"></i>
+                    </a>
+                    <a href="https://github.com/lashi02?tab=repositories"
+                        class="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center hover:bg-accent hover:text-black hover:border-accent transition-all">
+                        <i data-lucide="github"></i>
+                    </a>
+                    <a href="mailto:lazarojavierelking@gmail.com"
+                        class="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center hover:bg-accent hover:text-black hover:border-accent transition-all">
+                        <i data-lucide="mail"></i>
+                    </a>
+                </div>
+            </div>
+
+            <p class="mt-16 pt-8 border-t border-white/10 text-center text-sm text-gray-500">&copy; 2024 - Diseñado con
+                Tailwind CSS por un Futuro Ingeniero.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
