@@ -19,6 +19,7 @@
     <nav class="fixed top-0 w-full z-50 bg-[#1f2937]/80 backdrop-blur-md border-b border-white/10">
         <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
             <span class="text-xl font-bold tracking-tighter text-accent uppercase">Dev.Auto</span>
+            <!-- Desktop Menu -->
             <div class="hidden md:flex space-x-8 text-sm font-medium text-gray-300">
                 <a href="#inicio" class="hover:text-accent transition-colors">Inicio</a>
                 <a href="#stack" class="hover:text-accent transition-colors">Stack</a>
@@ -27,11 +28,25 @@
                 <a href="#contacto" class="hover:text-accent transition-colors">Contacto</a>
             </div>
             <!-- Mobile Menu Toggle -->
-            <button class="md:hidden text-gray-400">
-                <i data-lucide="menu"></i>
+            <button id="mobile-menu-toggle" class="md:hidden text-gray-400 hover:text-accent transition-colors" aria-label="Toggle menu">
+                <i data-lucide="menu" id="menu-icon"></i>
             </button>
         </div>
     </nav>
+    
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-menu-overlay" class="hidden md:hidden fixed inset-0 bg-black/50 backdrop-blur-sm z-40 transition-opacity duration-300"></div>
+    
+    <!-- Mobile Menu Sidebar -->
+    <div id="mobile-menu" class="hidden md:hidden fixed top-0 right-0 h-full w-64 bg-[#374151] border-l-2 border-accent/30 z-50 transform translate-x-full transition-transform duration-300 ease-in-out shadow-2xl">
+        <div class="flex flex-col h-full pt-20 px-6">
+            <a href="#inicio" class="text-accent hover:text-accent/80 transition-colors py-3 border-b border-white/10 hover:pl-2">Inicio</a>
+            <a href="#stack" class="text-accent hover:text-accent/80 transition-colors py-3 border-b border-white/10 hover:pl-2">Stack</a>
+            <a href="#proyectos" class="text-accent hover:text-accent/80 transition-colors py-3 border-b border-white/10 hover:pl-2">Proyectos</a>
+            <a href="#sobre-mi" class="text-accent hover:text-accent/80 transition-colors py-3 border-b border-white/10 hover:pl-2">Sobre mí</a>
+            <a href="#contacto" class="text-accent hover:text-accent/80 transition-colors py-3 hover:pl-2">Contacto</a>
+        </div>
+    </div>
 
     <!-- Hero Section -->
     <header id="inicio" class="relative min-h-screen flex items-center justify-center pt-16 pb-16 overflow-hidden"
@@ -165,7 +180,7 @@
                     <div class="p-6">
                         <h3 class="text-xl font-bold mb-2">Web para un restaurante</h3>
                         <p class="text-sm text-gray-300 mb-4">
-                            Una web para un restautante que permite gestionarse desde el panel de administracion
+                            Una web para un restaurante que permite gestionarse desde el panel de administracion
                         </p>
                         <div class="flex flex-wrap gap-2 mb-6">
                             <span class="text-[10px] font-bold px-2 py-1 bg-black/20 rounded text-accent">Python</span>
